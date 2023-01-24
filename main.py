@@ -7,3 +7,7 @@ def hello_world():
 @app.route('/flask')
 def flask_app():
     return "Esta es una aplicacion de Flask"
+
+@app.route('/flask-nuevo')
+def flask_app_nuevo():
+    return "Esta es una aplicacion de Flask nueva"

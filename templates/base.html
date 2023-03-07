@@ -1,28 +1,18 @@
-<!DOCTYPE html>
-<html lang="es">
+{% extends 'bootstrap/base.html'%}
 
-<head>
-    <meta charset="utf-8">
+{% block head %}
+    {{ super()}}
     <title>
         {%block title %} Flask Platzi |{%endblock%}
     </title>
-    <link rel="stylesheet" href="{{url_for('static', filename='CSS/main.css')}}"
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/main.css')}}">
+{% endblock %}
 
-</head>
-
-<body>
-    
-    <header>
-        {%include 'navbar.html'%}
-    </header>
-    {% block content %}
+{% block body %}
+    {%block navbar %}
+         {% include 'navbar.html' %}
     {% endblock %}
 
-</body>
+    {% block content %}{% endblock %}
 
-
-
-
-
-
-</html>
+{% endblock %}

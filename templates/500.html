@@ -1,0 +1,23 @@
+{% extends 'base2.html'%}
+
+
+{%block title %}
+    {{super()}}
+    Error 500 
+{%endblock%}
+
+
+
+{%block content %}
+        <nav>
+             <ul>
+                <img src="{{ url_for('static', filename='images/chanchitotriste.jpg')}}" alt="chanchitotriste">
+        
+            </ul>
+        </nav>
+        <h1>Error 500. Se cayo todo a la mierda. Espera rey</h1> 
+        <p>{{error1}} </p>
+        
+
+{%endblock %}
+

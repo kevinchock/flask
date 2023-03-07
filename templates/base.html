@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>
+        {%block title %} Flask Platzi |{%endblock%}
+    </title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/main.css')}}"
+
+</head>
+
+<body>
+    
+    <header>
+        {%include 'navbar.html'%}
+    </header>
+    {% block content %}
+    {% endblock %}
+
+</body>
+
+
+
+
+
+
+</html>
